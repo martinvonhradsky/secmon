@@ -77,6 +77,13 @@ class Navigation extends \yii\base\Component
 				'icon' => 'accessibility'
 			],
 			[
+				'label' => 'Mitre',
+				'url' => ['/mitre'],
+				'visible' => true,
+				'active' => 'mitre',
+				'icon' => 'perm_identity'
+			],
+			[
 				'label' => 'Roles',
 				'url' => ['/role'],
 				'visible' => Yii::$app->user->identity->can('create_users'),
